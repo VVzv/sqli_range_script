@@ -111,9 +111,8 @@ class SqlBlindInjectionGuess():
 
 if __name__ == '__main__':
     # writer = pygrape.pygrape(0.05)
+    url = input('输入靶场地址：') #'http://ip_addr/sqli/Less-8/?id=1'
     cprint('[*]%s加载中...'%time.strftime("[%H:%M:%S]", time.localtime()), 'green')
-    # main()
-    url = 'http://192.168.30.158/sqli/Less-8/?id=1'
     s = SqlBlindInjectionGuess(url)
     s.main()
 

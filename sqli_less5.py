@@ -20,7 +20,7 @@ tables:
 class SqlBlindInjectionGuess():
 
     def __init__(self, url, **params):
-        self.url = url#"http://192.168.199.224/sqli/Less-9/?id=1"#input("请输入注入链接:")
+        self.url = url
         self.string = 'zxcvbnmasddfghjklqwertyuiop1234567890_'
         self.new_time = time.strftime("[%H:%M:%S]", time.localtime())
 
